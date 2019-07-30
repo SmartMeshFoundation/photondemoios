@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EAA8B3722F04F8000583303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA8B3622F04F8000583303 /* AppDelegate.m */; };
+		9EAA8B3A22F04F8000583303 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA8B3922F04F8000583303 /* ViewController.m */; };
+		9EAA8B3D22F04F8000583303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAA8B3B22F04F8000583303 /* Main.storyboard */; };
+		9EAA8B3F22F04F8100583303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAA8B3E22F04F8100583303 /* Assets.xcassets */; };
+		9EAA8B4222F04F8100583303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAA8B4022F04F8100583303 /* LaunchScreen.storyboard */; };
+		9EAA8B4522F04F8100583303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA8B4422F04F8100583303 /* main.m */; };
+		9EAA8B4F22F04F8100583303 /* PhotonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA8B4E22F04F8100583303 /* PhotonTests.m */; };
+		9EAA8B5A22F04F8100583303 /* PhotonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA8B5922F04F8100583303 /* PhotonUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EAA8B4B22F04F8100583303 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EAA8B2A22F04F8000583303 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EAA8B3122F04F8000583303;
+			remoteInfo = Photon;
+		};
+		9EAA8B5622F04F8100583303 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EAA8B2A22F04F8000583303 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EAA8B3122F04F8000583303;
+			remoteInfo = Photon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EAA8B3222F04F8000583303 /* Photon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAA8B3522F04F8000583303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9EAA8B3622F04F8000583303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9EAA8B3822F04F8000583303 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9EAA8B3922F04F8000583303 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9EAA8B3C22F04F8000583303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EAA8B3E22F04F8100583303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EAA8B4122F04F8100583303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EAA8B4322F04F8100583303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAA8B4422F04F8100583303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EAA8B4A22F04F8100583303 /* PhotonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAA8B4E22F04F8100583303 /* PhotonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonTests.m; sourceTree = "<group>"; };
+		9EAA8B5022F04F8100583303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAA8B5522F04F8100583303 /* PhotonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAA8B5922F04F8100583303 /* PhotonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonUITests.m; sourceTree = "<group>"; };
+		9EAA8B5B22F04F8100583303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EAA8B2F22F04F8000583303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAA8B4722F04F8100583303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAA8B5222F04F8100583303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EAA8B2922F04F8000583303 = {
+			isa = PBXGroup;
+			children = (
+				9EAA8B3422F04F8000583303 /* Photon */,
+				9EAA8B4D22F04F8100583303 /* PhotonTests */,
+				9EAA8B5822F04F8100583303 /* PhotonUITests */,
+				9EAA8B3322F04F8000583303 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EAA8B3322F04F8000583303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA8B3222F04F8000583303 /* Photon.app */,
+				9EAA8B4A22F04F8100583303 /* PhotonTests.xctest */,
+				9EAA8B5522F04F8100583303 /* PhotonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EAA8B3422F04F8000583303 /* Photon */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA8B3522F04F8000583303 /* AppDelegate.h */,
+				9EAA8B3622F04F8000583303 /* AppDelegate.m */,
+				9EAA8B3822F04F8000583303 /* ViewController.h */,
+				9EAA8B3922F04F8000583303 /* ViewController.m */,
+				9EAA8B3B22F04F8000583303 /* Main.storyboard */,
+				9EAA8B3E22F04F8100583303 /* Assets.xcassets */,
+				9EAA8B4022F04F8100583303 /* LaunchScreen.storyboard */,
+				9EAA8B4322F04F8100583303 /* Info.plist */,
+				9EAA8B4422F04F8100583303 /* main.m */,
+			);
+			path = Photon;
+			sourceTree = "<group>";
+		};
+		9EAA8B4D22F04F8100583303 /* PhotonTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA8B4E22F04F8100583303 /* PhotonTests.m */,
+				9EAA8B5022F04F8100583303 /* Info.plist */,
+			);
+			path = PhotonTests;
+			sourceTree = "<group>";
+		};
+		9EAA8B5822F04F8100583303 /* PhotonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA8B5922F04F8100583303 /* PhotonUITests.m */,
+				9EAA8B5B22F04F8100583303 /* Info.plist */,
+			);
+			path = PhotonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EAA8B3122F04F8000583303 /* Photon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAA8B5E22F04F8100583303 /* Build configuration list for PBXNativeTarget "Photon" */;
+			buildPhases = (
+				9EAA8B2E22F04F8000583303 /* Sources */,
+				9EAA8B2F22F04F8000583303 /* Frameworks */,
+				9EAA8B3022F04F8000583303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Photon;
+			productName = Photon;
+			productReference = 9EAA8B3222F04F8000583303 /* Photon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EAA8B4922F04F8100583303 /* PhotonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAA8B6122F04F8100583303 /* Build configuration list for PBXNativeTarget "PhotonTests" */;
+			buildPhases = (
+				9EAA8B4622F04F8100583303 /* Sources */,
+				9EAA8B4722F04F8100583303 /* Frameworks */,
+				9EAA8B4822F04F8100583303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EAA8B4C22F04F8100583303 /* PBXTargetDependency */,
+			);
+			name = PhotonTests;
+			productName = PhotonTests;
+			productReference = 9EAA8B4A22F04F8100583303 /* PhotonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EAA8B5422F04F8100583303 /* PhotonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAA8B6422F04F8100583303 /* Build configuration list for PBXNativeTarget "PhotonUITests" */;
+			buildPhases = (
+				9EAA8B5122F04F8100583303 /* Sources */,
+				9EAA8B5222F04F8100583303 /* Frameworks */,
+				9EAA8B5322F04F8100583303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EAA8B5722F04F8100583303 /* PBXTargetDependency */,
+			);
+			name = PhotonUITests;
+			productName = PhotonUITests;
+			productReference = 9EAA8B5522F04F8100583303 /* PhotonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EAA8B2A22F04F8000583303 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "薛海新";
+				TargetAttributes = {
+					9EAA8B3122F04F8000583303 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					9EAA8B4922F04F8100583303 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9EAA8B3122F04F8000583303;
+					};
+					9EAA8B5422F04F8100583303 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9EAA8B3122F04F8000583303;
+					};
+				};
+			};
+			buildConfigurationList = 9EAA8B2D22F04F8000583303 /* Build configuration list for PBXProject "Photon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EAA8B2922F04F8000583303;
+			productRefGroup = 9EAA8B3322F04F8000583303 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EAA8B3122F04F8000583303 /* Photon */,
+				9EAA8B4922F04F8100583303 /* PhotonTests */,
+				9EAA8B5422F04F8100583303 /* PhotonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EAA8B3022F04F8000583303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAA8B4222F04F8100583303 /* LaunchScreen.storyboard in Resources */,
+				9EAA8B3F22F04F8100583303 /* Assets.xcassets in Resources */,
+				9EAA8B3D22F04F8000583303 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAA8B4822F04F8100583303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAA8B5322F04F8100583303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EAA8B2E22F04F8000583303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAA8B3A22F04F8000583303 /* ViewController.m in Sources */,
+				9EAA8B4522F04F8100583303 /* main.m in Sources */,
+				9EAA8B3722F04F8000583303 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAA8B4622F04F8100583303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAA8B4F22F04F8100583303 /* PhotonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAA8B5122F04F8100583303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAA8B5A22F04F8100583303 /* PhotonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EAA8B4C22F04F8100583303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EAA8B3122F04F8000583303 /* Photon */;
+			targetProxy = 9EAA8B4B22F04F8100583303 /* PBXContainerItemProxy */;
+		};
+		9EAA8B5722F04F8100583303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EAA8B3122F04F8000583303 /* Photon */;
+			targetProxy = 9EAA8B5622F04F8100583303 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EAA8B3B22F04F8000583303 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EAA8B3C22F04F8000583303 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EAA8B4022F04F8100583303 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EAA8B4122F04F8100583303 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EAA8B5C22F04F8100583303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9EAA8B5D22F04F8100583303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EAA8B5F22F04F8100583303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Photon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = photon.com.Photon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EAA8B6022F04F8100583303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Photon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = photon.com.Photon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EAA8B6222F04F8100583303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = photon.com.PhotonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photon.app/Photon";
+			};
+			name = Debug;
+		};
+		9EAA8B6322F04F8100583303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = photon.com.PhotonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photon.app/Photon";
+			};
+			name = Release;
+		};
+		9EAA8B6522F04F8100583303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = photon.com.PhotonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Photon;
+			};
+			name = Debug;
+		};
+		9EAA8B6622F04F8100583303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = photon.com.PhotonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Photon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EAA8B2D22F04F8000583303 /* Build configuration list for PBXProject "Photon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAA8B5C22F04F8100583303 /* Debug */,
+				9EAA8B5D22F04F8100583303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EAA8B5E22F04F8100583303 /* Build configuration list for PBXNativeTarget "Photon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAA8B5F22F04F8100583303 /* Debug */,
+				9EAA8B6022F04F8100583303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EAA8B6122F04F8100583303 /* Build configuration list for PBXNativeTarget "PhotonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAA8B6222F04F8100583303 /* Debug */,
+				9EAA8B6322F04F8100583303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EAA8B6422F04F8100583303 /* Build configuration list for PBXNativeTarget "PhotonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAA8B6522F04F8100583303 /* Debug */,
+				9EAA8B6622F04F8100583303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EAA8B2A22F04F8000583303 /* Project object */;
+}
