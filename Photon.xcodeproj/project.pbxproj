@@ -448,7 +448,7 @@
 		9EAA8B3422F04F8000583303 /* Photon */ = {
 			isa = PBXGroup;
 			children = (
-				9EAA8BCE22F1656F00583303 /* Phone(光子) */,
+				9EAA8BCE22F1656F00583303 /* Photon(Photon) */,
 				9E09FB6B22F1CA010007166F /* PhonePassWordView.h */,
 				9E09FB6A22F1CA010007166F /* PhonePassWordView.m */,
 				9E09FB6822F1C9C80007166F /* PhonePassWordView.xib */,
@@ -557,20 +557,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9EAA8BCE22F1656F00583303 /* Phone(光子) */ = {
+		9EAA8BCE22F1656F00583303 /* Photon(Photon) */ = {
 			isa = PBXGroup;
 			children = (
 				9E09FB7722F2953F0007166F /* Transfer */,
 				9E09FB7322F28C8C0007166F /* View */,
 				9E09FB7222F28C5F0007166F /* Model */,
-				9EAA8BDD22F1656F00583303 /* 通道列表 */,
-				9EAA8C0622F1656F00583303 /* 历史记录 */,
+				9EAA8BDD22F1656F00583303 /* channel list */,
+				9EAA8C0622F1656F00583303 /* historical record */,
 				9EAA8C1922F1656F00583303 /* Create a supplement */,
 			);
-			path = "Phone(光子)";
+			path = "Photon(Photon)";
 			sourceTree = "<group>";
 		};
-		9EAA8BDD22F1656F00583303 /* 通道列表 */ = {
+		9EAA8BDD22F1656F00583303 /* channel list */ = {
 			isa = PBXGroup;
 			children = (
 				9EAA8BE922F1656F00583303 /* ChannelController.h */,
@@ -591,22 +591,14 @@
 				9EAA8C0422F1656F00583303 /* RChannelToastTableViewCell.h */,
 				9EAA8BE622F1656F00583303 /* RChannelToastTableViewCell.m */,
 				9EAA8BEC22F1656F00583303 /* RChannelToastTableViewCell.xib */,
-				9EAA8BF222F1656F00583303 /* view */,
 				9E09FB4822F19B1B0007166F /* QRCodeViewController.h */,
 				9E09FB4922F19B1B0007166F /* QRCodeViewController.m */,
 				9E09FB4A22F19B1B0007166F /* QRCodeViewController.xib */,
 			);
-			path = "通道列表";
+			path = "channel list";
 			sourceTree = "<group>";
 		};
-		9EAA8BF222F1656F00583303 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		9EAA8C0622F1656F00583303 /* 历史记录 */ = {
+		9EAA8C0622F1656F00583303 /* historical record */ = {
 			isa = PBXGroup;
 			children = (
 				9EAA8C0B22F1656F00583303 /* PhotonTransactionRecordsViewController.h */,
@@ -625,7 +617,7 @@
 				9EAA8C1122F1656F00583303 /* SpectrumTradingTableViewCell.m */,
 				9EAA8C1522F1656F00583303 /* SpectrumTradingTableViewCell.xib */,
 			);
-			path = "历史记录";
+			path = "historical record";
 			sourceTree = "<group>";
 		};
 		9EAA8C1922F1656F00583303 /* Create a supplement */ = {
