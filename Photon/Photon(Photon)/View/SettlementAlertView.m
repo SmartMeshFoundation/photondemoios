@@ -17,8 +17,8 @@
         self.frame = frame;
         self.backgroundColor = [UIColorFromRGB(0x000000) colorWithAlphaComponent:0.9f];
 
-        [self.settlementCancleButton setTitle:@"取消" forState:UIControlStateNormal];
-        [self.settlementButton setTitle:@"确定" forState:UIControlStateNormal];
+        [self.settlementCancleButton setTitle:DDYLocalStr(@"ChatRegistMIDCancel") forState:UIControlStateNormal];
+        [self.settlementButton setTitle:DDYLocalStr(@"SignupOK") forState:UIControlStateNormal];
         
         self.bgView.backgroundColor = UIColorFromRGB(0x1B272B);
         
@@ -29,8 +29,8 @@
 
         self.settlementText.textColor = BUTTONBGCOLOR;
         
-        self.settlementTitle.text = @"是否立即结算？";
-        self.settlementText.text = @"结算通道大约需要消耗Gas：0.002 SMT";
+        self.settlementTitle.text = DDYLocalStr(@"Settlement");
+        self.settlementText.text = DDYLocalStr(@"thebillingchannel");
 
     }
     return self;

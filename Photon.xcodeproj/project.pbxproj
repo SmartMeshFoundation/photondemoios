@@ -382,8 +382,8 @@
 		9E09FB7322F28C8C0007166F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9EAA8BDC22F1656F00583303 /* PhoneTransferView.m */,
 				9EAA8C1722F1656F00583303 /* PhoneTransferView.h */,
+				9EAA8BDC22F1656F00583303 /* PhoneTransferView.m */,
 				9EAA8BD122F1656F00583303 /* PhoneTransferView.xib */,
 				9EAA8BFB22F1656F00583303 /* ClosedAlertView.h */,
 				9EAA8BF522F1656F00583303 /* ClosedAlertView.m */,

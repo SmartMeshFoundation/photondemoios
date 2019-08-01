@@ -38,34 +38,6 @@
         self.passWordTextField.attributedPlaceholder = placeholder;
         self.passWordTextField.alpha = 0.3;
         self.passWordTextField.textColor = BUTTONBGCOLOR;
-        //        self.merchantsNameLabel.text = [Tool getUserDefautsValueForKey:@"USER_MERCHANTNAME"];
-        //        self.parkNameLabel.text = [Tool getUserDefautsValueForKey:@"USER_PARKNAME"];
-        //        [self.myCouponsn setTitleColor:UIColorFromRGB(0x333333) forState:UIControlStateNormal];
-        //        [self.setUpButton setTitleColor:UIColorFromRGB(0x333333) forState:UIControlStateNormal];
-        //        [self.preferentialButton setTitleColor:UIColorFromRGB(0x333333) forState:UIControlStateNormal];
-        //        self.moneyLabel.textColor = HOMECOLOR;
-        
-        //        [AFHttpNetWork encryptPost:REMAINING params:@{} allBlock:^(NSDictionary *allDict) {
-        //            NSLog(@"%@",[allDict objectForKey:@"msg"]);
-        //            if([[allDict objectForKey:@"code"] intValue]==200){
-        //                NSLog(@"%@",allDict);
-        //                if([[allDict objectForKey:@"data"] count]==0){
-        //                    self.moneyLabel.text = [NSString stringWithFormat:@"账户时长：未充值"];
-        //
-        //                }else{
-        //                    if([[[allDict objectForKey:@"data"] objectForKey:@"remaining"]isEqualToString:@"0小时"]){
-        //                        self.moneyLabel.text = [NSString stringWithFormat:@"账户时长：0"];
-        //                    }else{
-        //                        self.moneyLabel.text = [NSString stringWithFormat:@"账户时长：%@",[[allDict objectForKey:@"data"] objectForKey:@"remaining"]];
-        //                    }
-        //                }
-        //            }else{
-        //
-        //            }
-        //
-        //        } success:^(id json) {
-        //        } failure:^(NSError *error) {
-        //        }];
         
     }
     return self;

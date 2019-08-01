@@ -16,6 +16,8 @@
 "SignupPassword" = "Set password";
 "ChatMenuScanQRCode" = "Scan QR Code";
 
+"thebillingchannel" = "结算通道大约需要消耗Gas：0.002 SMT";
+"Settlement" = "是否立即结算？";
 
 "WalletHomeTipBackup" = "Please backup";
 // Contacts
