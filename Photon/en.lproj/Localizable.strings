@@ -1,0 +1,320 @@
+
+
+// wallet
+
+"Synchronize to the latest block to use the wallet" = "Synchronize to the latest block to use the wallet";
+"Syncing block：" = "Syncing block：";
+"LoginInputPassword" = "Enter password";
+"ChatRegistMIDCancel" = "Cancel";
+"ChatRegistMIDOK" = "OK";
+"LoginPassword" = "Password";
+"TransferPwdError" = "Password error";
+"SignupOK" = "OK";
+"paymentcode" = "Payment code";
+"copyaddress" = "Copy receipt address";
+"WalletTransaction" = "Transaction";
+"SignupPassword" = "Set password";
+"ChatMenuScanQRCode" = "Scan QR Code";
+
+
+"WalletHomeTipBackup" = "Please backup";
+// Contacts
+"New Friends" = "New Friends";
+"Add" = "Add";
+"Added" = "Added";
+
+// Discover
+"The man near by" = "The man near by";
+"See who in your side" = "See who in your side";
+"The chat room" = "The chat room";
+"Find like-minded friends" = "Find like-minded friends";
+"ChatRoom" = "ChatRoom";
+"Search nearby people immediately" = "Search nearby people immediately";
+"man" = "man";
+"woman" = "woman";
+"no limit" = "no limit";
+
+// Me
+"Security" = "Security";
+"Photo" = "Photo";
+"Dynamic" = "Dynamic";
+"Setting" = "Setting";
+"Binding mobile" = "Binding mobile";
+"Binding" = "Binding";
+"BindingTip" = "Binding mobile can increase account security";
+"Edit" = "Edit";
+"Username" = "Username";
+"Add gender" = "Add gender";
+"Add region" = "Add region";
+"Individuality signature" = "Individuality signature";
+"Save" = "Save";
+"+ Friends" = "+ Friends";
+"Send message" = "Send message";
+"My Friends" = "My Friends";
+"Send" = "Send";
+"Authentication information" = "Authentication information";
+"SendInfoTip" = "You need to send verification application";
+"Finish" = "Finish";
+"Done" = "Done";
+"EN" = "EN";
+
+/** 提交反馈 */
+"MeFeedbackProblemTitle" = "What's the problem?";
+"MeFeedbackSuggestionTitle" = "What's the suggestion?";
+"MeFeedbackAddressTitle" = "Your email address?";
+"MeFeedbackCommit" = "Submit";
+"MeFeedbackProblem" = "Problem";
+"MeFeedbackSuggestion" = "Suggestion";
+"MeFeedbackInvalidateContent" = "Input is empty";
+"MeFeedbackInvalidateEmail" = "e-mail is empty";
+"MeFeedbackInvalidateEmailFormat" = "E-mail format is wrong";
+"MeFeedbackCommitSuccess" = "Submitted successfully";
+"MeFeedbackCommitFail" = "Submission Failed";
+
+// 进入everyone 提示
+"Welcome to #Everyone" = "Welcome to #Everyone";
+// 进入wifieveryone 提示
+"Welcome to #WifiEveryone" = "Welcome to MeshBox++SmartMesh";
+
+"全球普惠区块链峰会" = "Blockchain Festival Vietnam";
+"History" = "History";
+"joinWifiEveryoneButNotMeshWifi" = "It can only run when the WiFi named 'MeshBox'";
+
+
+////////////////////////////////////////////////////////////新家
+
+"ethHig" = "80";
+"walletAssetsWith" = "150";
+"grouptoast" = "No address book yet";
+
+"pleasebackup" = "Please backup";
+"topViewBackupButton" = "90";
+"topViewBackupButtonTitle" = "Please backup";
+
+
+"countries" = "Your country";
+"countriesIphone" = "Your mobile phone number";
+"Mobilephonenumbeformat" = "Wrong phone number format";
+"okPhone" = "Confirm mobile phone number";
+"Sendverificationcode" = "We will send the verification code to:";
+
+
+"countriessingapore" = "Singapore";
+
+"emailAdderss" = "Confirm email address";
+"emailMesageAdderss" = "We will send the verification code to:";
+
+"csecurityenter" = "Security center";
+"emaliLi" = "Email";
+"bindingISEmali" = "Is binding";
+"whatswron" = "What's wrong?";
+"adviceLabel" = "Please leave your valuable comments and Suggestions, we will try our best to improve.";
+"emaliNIde" = "Your email address?";
+"leaveEmali" = "Please leave your E-mail address";
+"preciousOpinion" = "Please input your valuable comments!";
+"chainasset" = "Chain assets";
+
+"enBgView" = "0";
+"enhomeBgView" = "1";
+
+"photonsuo" = "The lock still exists in the channel";
+"photonsuo5001" = "The channel state is not open or there is an incomplete Deposit operation in the channel";
+"photon2999" = "Public chain node RPC call failed";
+"photonsuo2012" = "Abnormal state of common chain nodes";
+"photonsuo1023" = "Unconnected for too long to initiate transactions";
+"photonsuo3003" = "Query routing failed";
+
+"photon1" = "The withdrawal amount cannot be 0";
+
+"iconImageWith" = "33";
+"digImageViewWith" = "42.5";
+"accButtonLeft" = "70";
+
+"sweep" = "Scan";
+"photonNetwork" = "Unable to do this, check network status.";
+"photonNodeNetwork" = "The first time you start a photon, you need to connect to the Internet.";
+
+"homenumber" = "Number";
+"hometype" = "State";
+"hometime" = "Time";
+"homenodata" = "There is no transfer record";
+"hometradinglist" = "Transaction list";
+"simulatorscan" = "The simulator cannot scan";
+"paymentcode" = "Payment code";
+"copyaddress" = "Copy receipt address";
+
+"currency" = "Currency";
+
+"pleasecurrency" = "Please select the currency";
+"enternumber" = "Enter the number of";
+"generalsettings" = "General Settings";
+"addresscontact" = "Address contact";
+"noaddresscontact" = "No address contact person";
+"thename" = "The name";
+"beneficiarys" = "Beneficiary's wallet address";
+"pricewaller" = "The unit price";
+"amountwaller" = "The amount of";
+"switchaccount" = "Switch account";
+"sanagementaccounts" = "Manage Account";
+"gestureslock" = "Gestures to lock";
+
+"accountaddnewassets" = "Add new assets";
+"personalinformation" = "Personal information";
+"headportrait" = "Head portrait";
+"headname" = "Name";
+"dig" = "Mining";
+"staytunedfor" = "Stay tuned for";
+"mortgages" = "The user mortgages the node to a contracted SMT, Involved in the interaction between Ozone and APP.";
+"blockbrowser" = "Block browser";
+"blockbrowsertoast" = "A tool that can browse and query the details of any block, transaction, or address.";
+"photonicnetwork" = "Photon";
+"photonicnetworktost" = "The photon network is a Layer 2 network architecture and is mainly used for payment and exchange requirements under the chain.";
+"ecologblock" = "Last block";
+"ecologprice" = "Market value";
+
+"lognotice" = "Notice";
+"phoneState" = "Photon network activation";
+"phoneblosk" = "Block synchronization";
+"phoneauthentication" = "The identity authentication";
+"photonPay" = "Photon transfer";
+"photonPayPayis" = "Pay";
+
+"photonAddress" = "Address";
+"photonobtain" = "Info";
+"photononochannel" = "No channels available, please create first";
+"photononochanneltoasr" = "No channel";
+"photononogas" = "There is not enough balance in the chain to pay gas";
+"photonOutofline" = "Out of line";
+"photonChannelalready" = "Channel already exists";
+"photonsidesnode" = "The nodes on both sides of the channel are identical";
+
+"photonsonline" = "Online";
+"photonInthestart" = "Recovery";
+"photonsioffline" = "Offline";
+"createrchannel" = "Create channels";
+"creaternote" = "Note";
+"createrThroughcreating" = "Through creating";
+"createraddressnode" = "The address cannot be empty";
+"createrDeposits" = "Deposits should be greater than 0";
+"createrInsufficientbalance" = "Insufficient balance in the chain";
+"creatertoast" = "Creating a channel requires confirmation. Please be patient and expect it to appear in the list in 1-2 minutes.";
+
+"createrdeposittoast" = "The supplementary balance needs to be confirmed, please wait patiently, it is expected to appear in the list in 1-2 minutes.";
+"creatersupplement" = "The supplementary amount should be greater than 0";
+
+"addAddress" = "Partner";
+"addchannelamount" = "Channel balance";
+"addChainbalance" = "Chain on the balance";
+"addChainadd" = "Add";
+"close" = "Close";
+
+"totalchannelbalance" = "Total channel balance";
+"determinewithdrawal" = "Determine the withdrawal";
+"entirebalance" = "The entire balance will be withdrawn";
+"chanleTrading" = "It will take some time since it is a chain transaction. Please wait.";
+"chanlewithdraw" = "You cannot withdraw cash on existing transactions";
+"chanlewithdrawfailure" = "Withdrawal failed. Is it mandatory to close the channel for withdrawal?";
+"chanlewtransactions" = "Existing transactions cannot be closed";
+
+"chanlewClosefailure" = "Close the failure";
+"chanlewClosefailuretoast" = "Failed to close the channel.";
+"nochanlewClosefailure" = "Determine close channel";
+
+"chanlewClosetoast" = "Closing the channel consumes approximately Gas: 0.002SMT";
+
+"chanlewmandatoryClosetoast" = "Mandatory channel closure failed";
+
+"whetherchanlewmandatoryClosetoast" = "Is channel closure mandatory?";
+
+"chanleSettlementfailures" = "Settlement failures";
+"chanleokSettlement" = "Confirm the settlement";
+"chanleimmediatelySettlement" = "Immediate settlement";
+"chanleiclosemmediatelySettlement" = "After settlement, the channel will be closed and the amount will be returned to the account address.";
+"chanlePleasewaitnumber" = "Please wait for the number of synchronized settlement blocks";
+"chanlecurrentblock" = "The current block";
+"chanleSettlementblocks" = "Settlement blocks";
+"chanleSettlemenclosetblocks" = "The channel is closed. Due to the transaction on the chain, it will take some time. Please wait.";
+"chanleclosedinthe" = "In the closed";
+"chanlesettlementinthe" = "In the settlement";
+"chanlchaneesettlementinthe" = "Settlement is in progress. It will take some time due to the transaction on the chain. Please wait";
+"chanleWithdrawalof" = "Withdrawal of";
+"chanleWithdrawaloftoastclose" = "Withdrawals take time, if too long, you can force the channel to be closed to withdraw.";
+"chanleclosemandatory" = "Closing a channel takes time, and if it takes too long, you can force it to close.";
+"chanletoclosemandatory" = "The other party is closing the channel. If it takes too long, you can force the channel to be closed.";
+"chanletoWithdrawalof" = "They're withdrawing money. It takes a while. If it takes too long, you can force the channel to be closed.";
+
+"uploadsuccessfullog" = "Log upload successful";
+"uploadfailurefullog" = "Log upload failed";
+"channeletremaining" = "Balance";
+
+"photonUrl" = "http://photon.smartmesh.cn/photon_en_faq.html";
+"photonTitle" = "Photon network FAQ";
+"blockTitle" = "Block browser";
+
+"channebalance" = "Balance";
+"photon" = "Photon";
+"spectrum" = "Spectrum";
+"successfuldeal" = "A successful deal";
+"thetransfer" = "In the transfer";
+"transactionfailure" = "Transaction failure";
+"deposittocomplete" = "Added to complete";
+"thedeposit" = "In the supplementary";
+"depositfailure" = "Add failure";
+"reasdeposit" = "Deposit";
+"beencreated" = "Has been created";
+"createfailure" = "Create a failure";
+
+"forcedshutdownsuccessful" = "Forced shutdown successful";
+"forcedclosing" = "Forced closing";
+"forcedshutdownfailed" = "Forced shutdown failed";
+
+"closesuccess" = "Close the success";
+"withdrawalcomplete" = "Withdrawal to complete";
+"withdrawalcofailed" = "Withdrawal of failure";
+"withdrawallogin" = "Withdrawal";
+"settlementcompletion" = "Settlement completion";
+"thesettlement" = "In the settlement";
+
+"assets" = "Total Assets";
+"phonelog" = "When running photon error occurs, submit local photon running log, which can better troubleshoot the problems encountered in the running process of photon.";
+"nearbyBtnWith" = "80";
+"squareBtnWith" = "75";
+
+"transfer_toast" = "Do you want to quit the photon network?";
+
+"chanleseterrerALert" = "Your transaction data is waiting for synchronization on the chain";
+"chanleseterrerALert1" = "Your transaction data synchronization failed. Please reconnect to the network";
+"ecologNowaller" = "You haven't got your wallet yet";
+
+"homecenterPresoncn" = "home_centerPresoncn";
+"homecenterPresoncnWith" = "190";
+"homecenterPresoncnHig" = "100";
+
+"homecenterAddresscn" = "home_centerAddresscn";
+"homecenterAddressWith" = "257";
+"homecenterAddressHig" = "137";
+"homecenterknowcn" = "home_okknowcn";
+
+"newaccountaddressWith" = "288.5";
+"newaccountaddressHig" = "219";
+"newaccountaddress" = "newaccount_addresscn";
+
+"photonproblemen" = "photon_ problemcn";
+"photonproblemenWith" = "144";
+"photonproblemenHig" = "189";
+
+"photontransferen" = "photon_transfercn";
+"photontransferenWith" = "193";
+"photontransferenHig" = "243";
+
+"photontransfertitleWith" = "75";
+
+"photonchannelerrer" = "channel_errercn";
+"photonchannelerrerWith" = "299";
+"photonchannelerrerHig" = "178";
+"startphoton" = "Start photon";
+
+"createwallet" = "Create wallet";
+"importwallet" = "Import wallet";
+"enterkeystore" = "Enter keystore";
+

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "StartViewController.h"
+#import "PhotonStartViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSString *address = [Tool getUserDefautsValueForKey:@"WALLET_ADDRESS"];
+
+    if(address.length>10){
+        PhotonStartViewController *sta = [[PhotonStartViewController alloc]init];
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:sta];
+        self.window.rootViewController = nav;
+
+    }else{
+        StartViewController *sta = [[StartViewController alloc]init];
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:sta];
+        self.window.rootViewController = nav;
+    }
+    
     // Override point for customization after application launch.
     return YES;
 }

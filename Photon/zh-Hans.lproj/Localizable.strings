@@ -1,0 +1,265 @@
+/** 钱包--Wallet */
+
+
+"Synchronize to the latest block to use the wallet" = "同步区块以后才能正常使用钱包";
+"Syncing block：" = "同步区块";
+"LoginInputPassword" = "输入密码";
+"ChatRegistMIDCancel" = "取消";
+"ChatRegistMIDOK" = "确定";
+"LoginPassword" = "密码";
+"TransferPwdError" = "密码不正确";
+"SignupOK" = "确定";
+"paymentcode" = "收款码";
+"copyaddress" = "复制收款地址";
+"WalletTransaction" = "交易记录";
+"SignupPassword" = "设置密码";
+"ChatMenuScanQRCode" = "扫一扫";
+
+/////////////////////////////////////////////////////新加
+"WalletHomeTipBackup" = "请备份";
+"countries" = "您的国家";
+"countriesIphone" = "您的手机号";
+"Mobilephonenumbeformat" = "手机号码格式不对";
+"okPhone" = "确认手机号码";
+"Sendverificationcode" = "我们将发送验证码给：";
+"pleasebackup" = "请备份";
+"topViewBackupButton" = "52";
+"topViewBackupButtonTitle" = "请备份";
+
+
+"countriessingapore" = "新加坡";
+
+"emailAdderss" = "确认邮箱地址";
+"emailMesageAdderss" = "我们将发送验证码给：";
+
+"csecurityenter" = "安全中心";
+"emaliLi" = "邮箱";
+"bindingISEmali" = "已绑定";
+"whatswron" = "出现什么问题？";
+"adviceLabel" = "请留下您的宝贵意见和建议，我们将努力改进。";
+"emaliNIde" = "您的邮箱？";
+"leaveEmali" = "请留下您的电子邮箱";
+"preciousOpinion" = "请输入您宝贵得意见！";
+"chainasset" = "链上资产";
+
+"sweep" = "扫码";
+
+"homenumber" = "数量";
+"hometype" = "状态";
+"hometime" = "时间";
+
+"grouptoast" = "暂无通讯录";
+
+"homenodata" = "暂无转账记录";
+"hometradinglist" = "交易列表";
+"simulatorscan" = "模拟器不能进行扫描";
+"paymentcode" = "收款码";
+"copyaddress" = "复制收款地址";
+
+"currency" = "币种";
+
+"pleasecurrency" = "请选择币种";
+"enternumber" = "输入数量";
+"generalsettings" = "普通设置";
+"addresscontact" = "地址联系人";
+"noaddresscontact" = "暂无地址联系人";
+"thename" = "姓名";
+"beneficiarys" = "收款人钱包地址";
+"pricewaller" = "单价";
+"amountwaller" = "金额";
+"switchaccount" = "切换账户";
+"sanagementaccounts" = "管理账户";
+"gestureslock" = "手势锁";
+
+"accountaddnewassets" = "增加新资产";
+"accountaddnewassets" = "增加新资产";
+"personalinformation" = "个人信息";
+"headportrait" = "头像";
+"headname" = "名字";
+"dig" = "挖矿";
+"staytunedfor" = "敬请期待";
+"mortgages" = "用户向合约抵押一定的SMT给节点。涉及Ozone和APP的交互。";
+"blockbrowser" = "区块浏览器";
+"blockbrowsertoast" = "可浏览并查询任意区块，交易，地址的详细信息的工具。";
+"photonicnetwork" = "光子网络";
+"photonicnetworktost" = "光子网络是二层网络，主要用于链下的支付和交换需求。";
+"ecologblock" = "区块";
+"ecologprice" = "市值";
+
+"lognotice" = "通知";
+"phoneState" = "光子网络启动";
+"phoneblosk" = "区块同步";
+"phoneauthentication" = "身份认证";
+"photonPay" = "光子支付";
+"photonPayPayis" = "支付";
+
+"photonAddress" = "地址";
+"photonobtain" = "获取";
+"photononochannel" = "暂无可用通道，请先创建";
+"photononochanneltoasr" = "暂无通道";
+"photononogas" = "链上没有足够的余额支付gas";
+"photonOutofline" = "对方不在线";
+"photonChannelalready" = "通道已存在";
+"photonsidesnode" = "通道双方节点相同";
+
+"photonsonline" = "在线";
+"photonInthestart" = "恢复中";
+"photonsioffline" = "离线";
+"createrchannel" = "创建通道";
+"creaternote" = "备注";
+"createrThroughcreating" = "完成创建";
+"createraddressnode" = "地址不能为空";
+"createrDeposits" = "存款应大于0";
+"createrInsufficientbalance" = "链上余额不足";
+"creatertoast" = "创建一个通道需要确认,请耐心等待,预计1 ~ 2分钟就会出现在列表中。";
+
+"createrdeposittoast" = "补充余额需要确认,请耐心等待,预计1 ~ 2分钟就会出现在列表中。";
+
+"addnewTitle" = "补充余额";
+
+"creatersupplement" = "补充金额应大于0";
+
+"addAddress" = "对方";
+"close" = "关闭";
+"nearbyBtnWith" = "40";
+"squareBtnWith" = "60";
+
+
+"addchannelamount" = "通道内余额";
+"addChainbalance" = "链上余额";
+"addChainadd" = "补充";
+"totalchannelbalance" = "通道总余额";
+"determinewithdrawal" = "确定提现";
+"entirebalance" = "将提现全部余额";
+"chanleTrading" = "由于是链上交易,需花费一定时间,请等待.";
+"chanlewithdraw" = "存在交易不能提现";
+"chanlewithdrawfailure" = "提现失败，是否强制关闭通道提现。";
+"chanlewtransactions" = "存在交易不能关闭";
+
+"chanlewClosefailure" = "关闭失败";
+"chanlewClosefailuretoast" = "关闭失败，是否强制关闭通道。";
+"nochanlewClosefailure" = "确定关闭通道";
+
+"chanlewClosetoast" = "关闭通道大约需要消耗Gas：0.002SMT";
+"chanlewwmandatoryClosetoast" = "强制关闭通道大约需要消耗Gas：0.002SMT，大约需要一周后可结算";
+
+"photonUrl" = "http://photon.smartmesh.cn/photon_cn_faq.html";
+"photonTitle" = "光子网络FAQ";
+"blockTitle" = "区块浏览器";
+
+
+"chanlewmandatoryClosetoast" = "强制关闭通道失败";
+
+"whetherchanlewmandatoryClosetoast" = "是否强制关闭通道？";
+
+"chanleSettlementfailures" = "结算失败";
+"chanleokSettlement" = "确认结算";
+"chanleimmediatelySettlement" = "立即结算";
+"chanleiclosemmediatelySettlement" = "结算后通道将关闭,金额将返还至账户地址.";
+"chanlePleasewaitnumber" = "同步结算块数中,请稍等";
+"chanlecurrentblock" = "当前块";
+"chanleSettlementblocks" = "结算块";
+"chanleSettlemenclosetblocks" = "通道关闭中,由于是链上交易,需要花费一定时间,请等待.";
+"enBgView" = "1";
+"enhomeBgView" = "0";
+"accButtonLeft" = "14";
+
+"chanleclosedinthe" = "关闭中";
+"chanlesettlementinthe" = "结算中";
+"chanleseterrerALert" = "您的交易数据正在等待链上同步";
+"chanleseterrerALert1" = "您的交易数据同步失败，请重新连接网络";
+
+
+"chanlchaneesettlementinthe" = "正在结算中,由于是链上交易,需要花费一段时间,请等待";
+"chanleWithdrawalof" = "提现中";
+"chanleWithdrawaloftoastclose" = "提现需要一段时间,如果时间过长,可以强制关闭通道来进行提现.";
+"chanleclosemandatory" = "关闭通道需要一段时间,如果时间过长,可以强制关闭通道.";
+"chanletoclosemandatory" = "对方正在关闭通道,如果时间过长,可以强制关闭通道.";
+"chanletoWithdrawalof" = "对方正在提现,需要一段时间,如果时间过长,可以强制关闭通道.";
+
+"uploadsuccessfullog" = "日志上传成功";
+"uploadfailurefullog" = "日志上传失败";
+"channeletremaining" = "剩余";
+
+"channebalance" = "余额";
+"photon" = "光子网络";
+"spectrum" = "光谱公链";
+"successfuldeal" = "交易成功";
+"thetransfer" = "转账中";
+"transactionfailure" = "交易失败";
+"deposittocomplete" = "补充完成";
+"thedeposit" = "补充中";
+"depositfailure" = "补充失败";
+"reasdeposit" = "存款";
+"beencreated" = "创建完成";
+"createfailure" = "创建失败";
+
+"forcedshutdownsuccessful" = "强制关闭成功";
+"forcedclosing" = "强制关闭中";
+"forcedshutdownfailed" = "强制关闭失败";
+"forcedshutdownbuttonfailed" = "强制关闭";
+
+"closesuccess" = "关闭成功";
+"withdrawalcomplete" = "提现完成";
+"withdrawalcofailed" = "提现失败";
+"withdrawallogin" = "提现";
+"settlementcompletion" = "结算完成";
+"thesettlement" = "结算中";
+
+"assets" = "总资产";
+"transfer_toast" = "是否退出光子网络？";
+
+
+"phonelog" = "运行光子出现错误时候，提交本地光子运行日志，可以更好地排查光子运行过程中遇到的问题。";
+"ethHig" = "50";
+"walletAssetsWith" = "120";
+
+"photonNetwork" = "无法进行此操作，请检查网络状态。";
+"photonNodeNetwork" = "第一次启动光子，需要连接互联网。";
+"photonsuo" = "通道中仍存在锁";
+"photonsuo5001" = "通道状态不为open或者通道内存在尚未完成的Deposit操作";
+"photon2999" = "公链节点rpc调用失败";
+"photonsuo2012" = "公链节点状态不正常";
+"photonsuo1023" = "无网时间过长,不允许发起交易";
+"photonsuo3003" = "查询路由失败";
+
+"photon1" = "提现金额不能为0";
+
+"ecologNowaller" = "您还没有钱包";
+"homecenterPresoncn" = "home_centerPresonen";
+"homecenterPresoncnWith" = "155";
+"homecenterPresoncnHig" = "102";
+
+"homecenterAddresscn" = "home_centerAddressen";
+"homecenterAddressWith" = "205";
+"homecenterAddressHig" = "140";
+
+"homecenterknowcn" = "home_okknowen";
+
+"newaccountaddress" = "newaccount_addressen";
+"newaccountaddressWith" = "182";
+"newaccountaddressHig" = "220";
+
+"photonproblemen" = "photon_ problemen";
+"photonproblemenWith" = "121";
+"photonproblemenHig" = "193";
+
+"photontransferen" = "photon_transferen";
+"photontransferenWith" = "193";
+"photontransferenHig" = "227";
+
+"photontransfertitleWith" = "40";
+
+"photonchannelerrer" = "channel_erreren";
+"photonchannelerrerWith" = "298";
+"photonchannelerrerHig" = "164.5";
+
+"createwallet" = "创建钱包";
+"importwallet" = "导入钱包";
+"enterkeystore" = "输入keystore";
+
+
+
+
+
+

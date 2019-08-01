@@ -1,0 +1,171 @@
+//
+//  PrefixHeader.pch
+//  Photon
+//
+//  Created by 薛海新 on 2019/7/31.
+//  Copyright © 2019 薛海新. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "NATModel.h"
+#import "RaidenManager.h"
+#import "NSObject+AlertText.h"
+#import "Tool.h"
+#import "NSObject+ALiHUD.h"
+#import "UIView+DDYExtension.h"
+#import <ethers/Address.h>
+#import <ethers/BigNumber.h>
+#import <ethers/Payment.h>
+#import <ethers/Provider.h>
+#import <ethers/Transaction.h>
+#import <ethers/TransactionInfo.h>
+#import <ethers/Account.h>
+
+//
+//  DDYMacroTool.h
+//  DDYProject
+//
+//  Created by starain on 15/8/8.
+//  Copyright © 2015 Starain. All rights reserved.
+//
+#define LC_NSSTRING_FORMAT(s,...) [NSString stringWithFormat:s,##__VA_ARGS__]
+#ifndef    weakly
+#if __has_feature(objc_arc)
+#define weakly( x )    autoreleasepool{} __weak __typeof__(x) __weak_##x##__ = x;
+#else    // #if __has_feature(objc_arc)
+#define weakly( x )    autoreleasepool{} __block __typeof__(x) __block_##x##__ = x;
+#endif    // #if __has_feature(objc_arc)
+#endif    // #ifndef    weakify
+
+#ifndef    normally
+#if __has_feature(objc_arc)
+#define normally( x )    try{} @finally{} __typeof__(x) x = __weak_##x##__;
+#else    // #if __has_feature(objc_arc)
+#define normally( x )    try{} @finally{} __typeof__(x) x = __block_##x##__;
+#endif    // #if __has_feature(objc_arc)
+#endif
+////////////////////////// 宏定义 ////////////////////////////
+#define rgba(r, g, b, a) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:a]
+
+/** 需要横屏或者竖屏，获取屏幕宽度与高度 */
+#define DDYSCREENW [UIScreen mainScreen].bounds.size.width
+#define DDYSCREENH [UIScreen mainScreen].bounds.size.height
+#define DDYNAVIBAR self.navigationController.navigationBar
+#define DDYNAVBARH self.navigationController.navigationBar.ddy_h
+#define DDYSCREENBOUNDS [UIScreen mainScreen].bounds
+#define DDYSCREENSIZE [UIScreen mainScreen].bounds.size
+
+
+#define RAIDEN_SMT_CONTRACT_ADDRESS @"0x6601F810eaF2fa749EEa10533Fd4CC23B8C791dc"//正式
+
+
+
+
+
+#define Screen_Width_Design 320//pixel
+#define Screen_Height_Design 1136//pixel
+#define Screen_TabBar_Height 49
+#define Screen_NavBar_Height 64
+#define NavHeight (Screen_Height == 812.0 ? 88 : 64)///导航条+状态条
+#define NavTabHeight (Screen_Height == 812.0 ? 44 : 20)////状态条
+
+#define TabBarHeight (Screen_Height == 812.0 ? 32 : 0)////底部栏
+
+#define ViewHeight Screen_Height-NavHeight-TabBarHeight////除导航条和底部栏
+
+#define Localized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Localizable"]
+
+
+#define Screen_WithoutNavAndTab_Height Screen_Height-Screen_TabBar_Height-Screen_NavBar_Height
+#define Screen_WithoutNavAndTab_Height_Design 450
+
+#define NOSURE_WIDTH 0
+
+#define WINDOW [[UIApplication sharedApplication].windows lastObject]
+
+#define Screen_Width [UIScreen mainScreen].bounds.size.width
+#define Screen_Height [UIScreen mainScreen].bounds.size.height
+
+
+#define ScreenWidth DDYSCREENW
+#define ScreenHeight DDYSCREENH
+
+#define SafeAreaTopHeight (ScreenHeight == 812.0 ? 88 : 64)
+#define SafeAreaBottomHeight (ScreenHeight == 812.0 ? 34 : 0)
+
+
+
+#define SafeStatusBarFrame [[UIApplication sharedApplication] statusBarFrame]
+#define SafeStatusBarHeight SafeStatusBarFrame.size.height
+#define SafeStatusBarDiff (SafeStatusBarHeight - 20)
+
+#define NASCREENW DDYSCREENW
+#define NASCREENH DDYSCREENH
+
+
+#define NANAVBARH self.navigationController.navigationBar.ddy_h
+
+
+#define DDYKeyWindow \
+\
+([[[UIApplication sharedApplication] delegate] window]) ? \
+([[[UIApplication sharedApplication] delegate] window]) : \
+([[UIApplication sharedApplication] keyWindow])
+
+/** 根据比例改变不同尺寸上数值 */
+#define DDYKW(R) R*(DDYSCREENW)/375
+#define DDYKH(R) R*(DDYSCREENH)/667
+
+/** 缩放系数 */
+#define DDYScreenScale [UIScreen mainScreen].scale
+
+/** 自定义颜色和随机颜色 */
+#define DDYColor(r,g,b,a) [UIColor colorWithRed:(r) green:(g) blue:(b) alpha:(a)]
+#define DDYRGBA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define NARGBA(r,g,b,a) DDYRGBA(r,g,b,a)
+
+#define DDYRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+// 深黑
+#define DDY_Big_Black [UIColor colorWithRed:50/255.0 green:50/255.0 blue:50/255.0 alpha:1.0]
+#define DDY_Big_Black [UIColor colorWithRed:50/255.0 green:50/255.0 blue:50/255.0 alpha:1.0]
+
+// 中黑
+#define DDY_Mid_Black [UIColor colorWithRed:100/255.0 green:100/255.0 blue:100/255.0 alpha:1.0]
+// 浅黑
+#define DDY_Small_Black [UIColor colorWithRed:150/255.0 green:150/255.0 blue:150/255.0 alpha:1.0]
+
+#define APP_MAIN_COLOR [UIColor colorWithRed:248/255.0 green:220/255.0 blue:74/255.0 alpha:1.0]
+
+#define NA_MAIN_COLOR APP_MAIN_COLOR
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define BGCOLOT UIColorFromRGB(0x13151C)
+
+#define BGTEXT UIColorFromRGB(0xE2EDEA)
+
+#define BUTTONBGCOLOR UIColorFromRGB(0x45FFBF)
+#define BUTTONTEXTCOLOR UIColorFromRGB(0x1B272B)
+
+
+
+#define TEXTALPHA [UIColor colorWithRed:226.0/255.0 green:237.0/255.0 blue:234.0/255.0 alpha:0.5];
+
+
+
+/** 字体 */
+#define DDYFont(f) [UIFont systemFontOfSize:(f)]
+#define DDYBDFont(f) [UIFont boldSystemFontOfSize:(f)]
+
+
+
+
+
+#define DDYLocalStr(key)  [NSBundle.mainBundle localizedStringForKey:(key) value:@"" table:nil]
+
+
+
+
+#endif /* PrefixHeader_pch */

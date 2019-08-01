@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertChannelToast">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jc7-c7-pMf">
+                    <rect key="frame" x="0.0" y="0.0" width="403" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK5-G8-ZaH">
+                            <rect key="frame" x="27" y="20" width="349" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="HLs-42-i8B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将提现全部余额5MESH,由于是链上交易,需花费一定时间,请等待." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj8-93-KCs">
+                            <rect key="frame" x="27" y="56" width="349" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1778" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jid-dC-ihZ">
+                            <rect key="frame" x="30" y="135" width="343" height="45"/>
+                            <color key="backgroundColor" red="0.97305089239999998" green="0.77549503399999997" blue="0.33208250810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="XXr-Za-yt8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="我知道了">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vK5-G8-ZaH" secondAttribute="trailing" constant="27" id="4Fo-eO-sBF"/>
+                        <constraint firstItem="gj8-93-KCs" firstAttribute="top" secondItem="vK5-G8-ZaH" secondAttribute="bottom" constant="15" id="DwU-wl-3gg"/>
+                        <constraint firstItem="gj8-93-KCs" firstAttribute="leading" secondItem="jc7-c7-pMf" secondAttribute="leading" constant="27" id="H76-Yt-Mnm"/>
+                        <constraint firstAttribute="trailing" secondItem="gj8-93-KCs" secondAttribute="trailing" constant="27" id="RyI-48-CEH"/>
+                        <constraint firstItem="Jid-dC-ihZ" firstAttribute="top" secondItem="gj8-93-KCs" secondAttribute="bottom" constant="15" id="XjH-MH-z52"/>
+                        <constraint firstItem="vK5-G8-ZaH" firstAttribute="top" secondItem="jc7-c7-pMf" secondAttribute="top" constant="20" id="Y0H-a3-UrP"/>
+                        <constraint firstAttribute="trailing" secondItem="Jid-dC-ihZ" secondAttribute="trailing" constant="30" id="arx-eg-hNU"/>
+                        <constraint firstAttribute="bottom" secondItem="Jid-dC-ihZ" secondAttribute="bottom" constant="20" id="fZv-Sf-lkZ"/>
+                        <constraint firstItem="vK5-G8-ZaH" firstAttribute="leading" secondItem="jc7-c7-pMf" secondAttribute="leading" constant="27" id="jo4-j7-xGt"/>
+                        <constraint firstItem="Jid-dC-ihZ" firstAttribute="leading" secondItem="jc7-c7-pMf" secondAttribute="leading" constant="30" id="zqQ-KI-e2S"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jc7-c7-pMf" secondAttribute="bottom" id="Bgq-mG-7WZ"/>
+                <constraint firstItem="jc7-c7-pMf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PdA-E3-NAa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jc7-c7-pMf" secondAttribute="trailing" id="WyS-dv-mi2"/>
+                <constraint firstItem="jc7-c7-pMf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qBY-sI-1ZI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="alertButton" destination="Jid-dC-ihZ" id="LDT-6V-Yt0"/>
+                <outlet property="tishiLabel" destination="vK5-G8-ZaH" id="k7V-YI-7E5"/>
+                <outlet property="toastLabel" destination="gj8-93-KCs" id="y9M-tz-n9L"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="-104.5"/>
+        </view>
+    </objects>
+</document>
