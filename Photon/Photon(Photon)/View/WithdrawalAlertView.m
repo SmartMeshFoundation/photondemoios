@@ -22,10 +22,10 @@
         self.bgView.backgroundColor = UIColorFromRGB(0x1B272B);
         
         [self.withdrawalAlertCancleButton setBackgroundColor:BUTTONBGCOLOR];
-        [self.withdrawalAlertCancleButton setTitle:@"取消" forState:UIControlStateNormal];
+        [self.withdrawalAlertCancleButton setTitle:DDYLocalStr(@"ChatRegistMIDCancel") forState:UIControlStateNormal];
         [self.withdrawalAlertCancleButton setTitleColor:BUTTONTEXTCOLOR forState:UIControlStateNormal];
         [self.withdrawalAlertShutDown setBackgroundColor:BUTTONBGCOLOR];
-        [self.withdrawalAlertShutDown setTitle:@"确定" forState:UIControlStateNormal];
+        [self.withdrawalAlertShutDown setTitle:DDYLocalStr(@"SignupOK") forState:UIControlStateNormal];
 
         [self.withdrawalAlertShutDown setTitleColor:BUTTONTEXTCOLOR forState:UIControlStateNormal];
 

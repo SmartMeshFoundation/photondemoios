@@ -131,6 +131,16 @@ static RaidenManager *_instanceRaiden;
 
 
 - (void)startRaiden:(NSString *)addressIP has:(NSString *)password node:(NSString *)alertNode address:(NSString *)walletAddress{
+    
+    
+    /*
+        The first time you start a photon must be in a networked environment.
+     
+     It is not possible to restart the photon repeatedly, and the photon must be stopped before it can be started again.
+     
+     Stop photon
+     
+     */
 //    CFRunLoopRun();
     NSString *ipAddress = [self getCurrentLocalIP];
 
@@ -143,9 +153,10 @@ static RaidenManager *_instanceRaiden;
 
     
     NSString *raidenDataPath=[NSHomeDirectory() stringByAppendingString:@"/Documents/raiden/data"];
+    //Photon log
     NSString *raidenLogPath=[NSString stringWithFormat:@"%@/Documents/raiden/log_%@.string",NSHomeDirectory(),addressString];
     NSString *raidenPath=[NSHomeDirectory() stringByAppendingString:@"/Documents/raiden"];
-    
+    ////A UTC file will be generated under the keystore path.
     NSString *raidenKeystorePath=[NSHomeDirectory() stringByAppendingString:@"/Documents/raiden/keystore"];
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:raidenPath]) {
@@ -164,10 +175,11 @@ static RaidenManager *_instanceRaiden;
     
     NSString *savepath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:LC_NSSTRING_FORMAT(@"%@.json", walletAddress)];
     
-
+    ////////////。raidenKeystorePath Generated UTC file
+    ///Files needed for photon startup
     NSData *keystoreData = [NSData dataWithContentsOfFile:savepath];
     [keystoreData writeToFile:[NSString stringWithFormat:@"%@/UTC--2017-07-17T08-46-39.151000000Z--%@", raidenKeystorePath, addressString] atomically:YES];
-    
+    /////node
     NSString *endPoint=@"http://transport01.smartmesh.cn:44444";
 
     NSString *listenAddress;
@@ -191,12 +203,16 @@ static RaidenManager *_instanceRaiden;
         MobileStrings* otherArgs = MobileNewStrings(1);
         [otherArgs set:0 str:@"--xmpp" error:nil];
         
+        //raidenKeystorePath UTC path
+        //error Error message
         self.raidenRpc = MobileStartUp(activeAddress, raidenKeystorePath, endPoint, raidenDataPath, password, apiAddress, listenAddress, raidenLogPath, RAIDEN_Contract_Token,otherArgs, &error);
-
+        
+    ///////After raidenRpc starts, you need to start subscription to complete the startup photon.
+        
         if(self.raidenRpc){
             self.raidenSS = self.raidenRpc;
+            
             [[NSNotificationCenter defaultCenter] postNotificationName:@"RAIDENRPCSUCCESS" object:nil];
-
             
             self.subscription=[self.raidenRpc subscribe:self error:&error];
             
@@ -210,6 +226,8 @@ static RaidenManager *_instanceRaiden;
             }
             
         }else{
+            
+            /////The first time I started, I didn’t go back here.
             
             NSDictionary * errorInfo = error.userInfo;
             if ([[errorInfo allKeys] containsObject: @"NSLocalizedDescription"]){
@@ -229,18 +247,6 @@ static RaidenManager *_instanceRaiden;
         }
     });
 }
-
-- (void)retryStartSmartRaiden:(NSString*)activeAddress raidenKeystorePath:(NSString*)raidenKeystorePath endPoint:(NSString*)endPoint raidenDataPath:(NSString*)raidenDataPath passwordPath:(NSString*)passwordPath ip:(NSString*)ip raidenLogPath:(NSString*)raidenLogPath{
-    NSError *error=nil;
-    [RaidenManager sharedManager].raidenRpc = MobileStartUp(activeAddress, raidenKeystorePath, endPoint, raidenDataPath, passwordPath, @"",ip, raidenLogPath, @"0xCE0A1a81817C56fDb72dB8F3232b06f1c4C8a672",nil, &error);
-    if (error) {
-//        [self showErrorText:@"雷电启动失败！"];
-        sleep(5);
-        [self retryStartSmartRaiden:activeAddress raidenKeystorePath:raidenKeystorePath endPoint:endPoint raidenDataPath:raidenDataPath passwordPath:passwordPath ip:ip raidenLogPath:raidenLogPath];
-    }
-}
-
-
 
 
 #pragma mark - MobileNotifyHandler
@@ -270,6 +276,7 @@ static RaidenManager *_instanceRaiden;
     }];
 }
 
+//////Photon channel change push
 -(void)onNotify:(long)level info:(NSString *)info{
     //////创建通道成功后返回的信息  然后跳转到通道列表页面.
     
@@ -317,7 +324,6 @@ static RaidenManager *_instanceRaiden;
         }else{
             resultBlock(NO,dictData,nil);
         }
-
         
     });
     

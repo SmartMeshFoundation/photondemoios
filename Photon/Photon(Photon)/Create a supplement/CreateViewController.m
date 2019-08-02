@@ -120,46 +120,6 @@
 }
 
 
-- (IBAction)closeeButtonclick:(id)sender {
-    
-    if(self.isTypeCeools == NO){
-        self.isTypeCeools = YES;
-        _clooseTypeView = [[UIView alloc]initWithFrame:CGRectMake(15, NavHeight+84, ScreenWidth-30, _arrayM.count*50)];
-        _clooseTypeView.backgroundColor = UIColorFromRGB(0x23393A);
-        
-        for(int i=0;i<_arrayM.count;i++){
-            NATModel *model = [_arrayM objectAtIndex:i];
-            UILabel *labels = [[UILabel alloc]initWithFrame:CGRectMake(15, i*50, ScreenWidth-60, 50)];
-            labels.text = model.symbol;
-            labels.font = [UIFont systemFontOfSize:15];
-            labels.textColor = BGTEXT;
-            [_clooseTypeView addSubview:labels];
-            
-            UIButton *buttons = [[UIButton alloc]initWithFrame:CGRectMake(0, i*50, ScreenWidth-30, 50)];
-            buttons.tag = 1090+i;
-            [buttons addTarget:self action:@selector(chooseTypeBUttonCLick:) forControlEvents:UIControlEventTouchUpInside];
-            [_clooseTypeView addSubview:buttons];
-        }
-        
-        [self.view addSubview:_clooseTypeView];
-        
-    }else{
-        self.isTypeCeools = NO;
-        [_clooseTypeView removeFromSuperview];
-    }
-
-}
-
--(void)chooseTypeBUttonCLick:(UIButton *)but{
-    [_clooseTypeView removeFromSuperview];
-    self.isTypeCeools = NO;
-    self.tokenAddressString = RAIDEN_SMT_CONTRACT_ADDRESS;
-    
-//    self.smtMesh.text = model.symbol;
-    self.chooseSMTLabel.text = @"SMT";
-}
-
-
 - (IBAction)backPush:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -187,7 +147,7 @@
         return;
     }
         
-        
+        ////Query chain balance。chain balance>=0.01  Alert  determineButtonClick
         [[RaidenManager sharedManager]getAssetsOnToken:@"" token:^(BOOL success, id result, NSError *error) {
             if (success) {
                 
@@ -254,7 +214,6 @@
     [self showLoading];
     ////创建通道
     ///正式 46666；
-    //测试100
     
     //self.createAddressTxFeld.text Address
     //self.tokenAddressString   Contract address

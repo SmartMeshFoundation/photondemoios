@@ -72,6 +72,16 @@
 "MeFeedbackInvalidateEmailFormat" = "E-mail format is wrong";
 "MeFeedbackCommitSuccess" = "Submitted successfully";
 "MeFeedbackCommitFail" = "Submission Failed";
+"TransferInputAmount" = "Enter the amount";
+"QRCodeSavePhotoTip" = "Tip";
+"SignupCancel" = "Cancel";
+"GroupChatComplete" = "Complete";
+"SignupCreating" = "Creating...";
+"WalletTransaction" = "Transaction";
+"ScanTip" = "Align QR Code within frame to Scan";
+"ScanLightUp" = "Light up";
+"ScanLightOff" = "Light off";
+"addnewTitle" = "Add Balance";
 
 // 进入everyone 提示
 "Welcome to #Everyone" = "Welcome to #Everyone";
@@ -209,6 +219,9 @@
 "addChainbalance" = "Chain on the balance";
 "addChainadd" = "Add";
 "close" = "Close";
+"WalletAddressCopied" = "copied";
+"homeerrer" = "Replication failed";
+"SMTBackUpPrepareConfirm" = "Backup wallet";
 
 "totalchannelbalance" = "Total channel balance";
 "determinewithdrawal" = "Determine the withdrawal";

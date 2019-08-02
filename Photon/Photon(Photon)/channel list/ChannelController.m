@@ -746,7 +746,7 @@
     RChannelModel *channel = [self.channels objectAtIndex:indexPath.section];
     __block ChannelController *blockSelf = self;
 
-    
+    //////// 1 normal status
     if([channel.state integerValue] == 1){///三按钮
         
             self.channelCell = [ChannelTableViewCell initChannelTableViewCellTableViewCell:tableView];
@@ -800,6 +800,10 @@
         
     }else if([channel.state integerValue] == 2||[channel.state integerValue] == 4||[channel.state integerValue] == 5){
         
+        /////2 Billing status   Can settle
+        /////4 Closed
+        /////5 In settlement
+
         if([channel.state integerValue] == 2){
             
             

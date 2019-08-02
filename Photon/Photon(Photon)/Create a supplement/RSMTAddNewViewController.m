@@ -59,24 +59,7 @@
 - (IBAction)addButtonClick:(id)sender {
 
     if(self.isNetWork == NO){
-//    if([self.valueAddLabel.text doubleValue]>=0.01){
-//
-//    }else{
-//        [self ff_HudText:DDYLocalStr(@"createrDeposits") isLoading:NO hideDelay:2];
-//
-//        return;
-//    }
-    
 
-    
-    NSString *balance = self.itemCurrent.balance;
-    
-    
-//    if(([self.valueAddLabel.text doubleValue])>=[balance doubleValue]){
-//        [self ff_HudText:DDYLocalStr(@"createrInsufficientbalance") isLoading:NO hideDelay:2];
-//
-//        return;
-//    }
     
     self.toastView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height)];
     self.toastView.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.5];
@@ -192,7 +175,7 @@
 
     [self.toastView removeFromSuperview];
     
-    ////Get the balance
+    ////Get the balance >=0.01
     [[RaidenManager sharedManager]getAssetsOnToken:@"" token:^(BOOL success, id result, NSError *error) {
         if (success) {
             

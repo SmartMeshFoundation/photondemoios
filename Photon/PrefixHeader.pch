@@ -56,7 +56,7 @@
 #define DDYSCREENBOUNDS [UIScreen mainScreen].bounds
 #define DDYSCREENSIZE [UIScreen mainScreen].bounds.size
 
-
+/////SMT contract address
 #define RAIDEN_SMT_CONTRACT_ADDRESS @"0x6601F810eaF2fa749EEa10533Fd4CC23B8C791dc"//正式
 
 

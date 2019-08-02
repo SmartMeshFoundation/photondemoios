@@ -16,6 +16,20 @@
 "ChatMenuScanQRCode" = "扫一扫";
 "thebillingchannel" = "结算通道大约需要消耗Gas：0.002 SMT";
 "Settlement" = "是否立即结算？";
+"TransferInputAmount" = "请输入金额";
+"QRCodeSavePhotoTip" = "提示";
+"startphoton" = "启动光子";
+"SignupCancel" = "取消";
+"GroupChatComplete" = "完成";
+"SignupCreating" = "创建中";
+"WalletTransaction" = "交易记录";
+"ScanTip" = "将二维码放入框中即可扫描";
+"ScanLightUp" = "打开照明灯";
+"ScanLightOff" = "关闭照明灯";
+"WalletAddressCopied" = "已复制";
+
+"addnewTitle" = "补充余额";
+"homeerrer" = "复制失败";
 
 /////////////////////////////////////////////////////新加
 "WalletHomeTipBackup" = "请备份";
@@ -103,7 +117,7 @@
 "photonOutofline" = "对方不在线";
 "photonChannelalready" = "通道已存在";
 "photonsidesnode" = "通道双方节点相同";
-
+"SMTBackUpPrepareConfirm" = "备份钱包";
 "photonsonline" = "在线";
 "photonInthestart" = "恢复中";
 "photonsioffline" = "离线";

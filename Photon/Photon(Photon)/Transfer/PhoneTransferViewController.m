@@ -86,47 +86,6 @@
     [self.navigationController pushViewController:smtChannelVC animated:YES];
 
 }
-- (IBAction)chooseBurttonCLick:(UIButton *)sender {
-    if(self.isTypeCeools == NO){
-        self.isTypeCeools = YES;
-        _clooseTypeView = [[UIView alloc]initWithFrame:CGRectMake(15, self.chooseView.ddy_bottom, ScreenWidth-30, _arrayM.count*50)];
-        _clooseTypeView.backgroundColor = UIColorFromRGB(0x23393A);
-        
-        for(int i=0;i<_arrayM.count;i++){
-            NATModel *model = [_arrayM objectAtIndex:i];
-            UILabel *labels = [[UILabel alloc]initWithFrame:CGRectMake(15, i*50, ScreenWidth-60, 50)];
-            labels.text = model.symbol;
-            labels.font = [UIFont systemFontOfSize:15];
-            labels.textColor = BGTEXT;
-            [_clooseTypeView addSubview:labels];
-            
-            UIButton *buttons = [[UIButton alloc]initWithFrame:CGRectMake(0, i*50, ScreenWidth-30, 50)];
-            buttons.tag = 1090+i;
-            [buttons addTarget:self action:@selector(chooseTypeBUttonCLick:) forControlEvents:UIControlEventTouchUpInside];
-            [_clooseTypeView addSubview:buttons];
-            
-        }
-        
-        [self.view addSubview:_clooseTypeView];
-        
-    }else{
-        self.isTypeCeools = NO;
-        [_clooseTypeView removeFromSuperview];
-    }
-}
-
--(void)chooseTypeBUttonCLick:(UIButton *)but{
-    [_clooseTypeView removeFromSuperview];
-    self.isTypeCeools = NO;
-    
-    NATModel *model = [_dataArray objectAtIndex:but.tag-1090];
-    self.itemCurrent = model;
-    
-    self.tokenSMTMESHAddress = RAIDEN_SMT_CONTRACT_ADDRESS;
-//    self.smtMesh.text = @"SMT";
-    self.chooseSMTLabel.text = @"SMT";
-
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -177,6 +136,8 @@ if (_addressTextField.text.length<5) {
     }
     [self showLoading];
     self.tokenSMTMESHAddress = RAIDEN_SMT_CONTRACT_ADDRESS;
+    
+    /////Find the indirect channel balance after the balance is not enough or the channel is not found
 
     [[RaidenManager sharedManager] transfersTrue:self.tokenSMTMESHAddress and:_addressTextField.text amout:_numberTextField.text dataStr:nil jsonStr:@"" resultBlock:^(BOOL success, id result, NSError *error) {
         [self dismissLoading];
@@ -188,8 +149,10 @@ if (_addressTextField.text.length<5) {
             [self.navigationController pushViewController:ohosad animated:YES];
             
         }else if([[result objectForKey:@"error_code"] integerValue] == 1002 ||[[result objectForKey:@"error_code"] integerValue] == 3002){
-           
-
+           /////////1002 Insufficient direct channel balance, looking for indirect channels
+            //////3002  Can't find the channel, go to the indirect channel
+            
+            //// transfer findPath  success transfersNew  End of failure
             [[RaidenManager sharedManager]findPath:_addressTextField.text and:self.tokenSMTMESHAddress amout:_numberTextField.text dataStr:nil resultBlock:^(BOOL success, id result, NSError *error) {
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -208,6 +171,8 @@ if (_addressTextField.text.length<5) {
                             NSString *fee = [NSString stringWithFormat:@"%@",[[array objectAtIndex:0] objectForKey:@"fee"]];
                             self.fellStr = fee;
                             if([fee isEqualToString:@"0"]){
+                                
+                                ///3002 1002 Indirect transfer
                                 [[RaidenManager sharedManager] transfersNew:self.tokenSMTMESHAddress and:_addressTextField.text amout:_numberTextField.text dataStr:[NSString stringWithFormat:@"%@",[dict objectForKey:@"error_code"]] jsonStr:self.jsonStr resultBlock:^(BOOL success, id result, NSError *error) {
                                     if(success){
                                         PhotonTransactionRecordsViewController *ohosad = [[PhotonTransactionRecordsViewController alloc]init];
@@ -274,6 +239,8 @@ if (_addressTextField.text.length<5) {
 - (IBAction)obtainButtonClick:(id)sender {
     self.tokenSMTMESHAddress = RAIDEN_SMT_CONTRACT_ADDRESS;
 
+    ///Get channel list
+    
     [[RaidenManager sharedManager]getChannelList:self.tokenSMTMESHAddress block:^(BOOL success, id result, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
 
